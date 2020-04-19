@@ -38,7 +38,7 @@ export const cargaContador = () => {
         let valor = 0;
         for (const elemento of divTodoList.children) {
             const completado = elemento.classList.contains('completed');
-            if (completado) {
+            if (!completado) {
                 valor++;
             }
         }
